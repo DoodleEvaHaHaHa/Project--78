@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <title>Family Book</title>
+    <body>
+        <h1>Family Book</h1>
+        <hr> <hr>
+        <img id="Family Book" src="Family Book.jpg"
+        <h3 id="one">1. Our Family Book</h3>
+        <button type="button" onclick="family()">NEXT</button>
+        <hr>
+        <script>
+            var names=[
+                "2. My Father(Linat Chacko)",
+                "3. My Mother(Soumya Chacko)",
+                "4. My Sister(Anaya Chacko)",
+                "5. My Pet Dog(Enzo)",
+                "6. My Grandfather(Oomen Chacko)",
+            ];
+            var images=[
+               "FATHER.jpg",
+               "MOTHER.jpg",
+               "SISTER.jpg",
+               "DOG.jpg",
+               "GRANDPA.jpg", 
+            ]
+
+            var i=0;
+            function family(){
+                document.getElementById("one").innerHTML=names[i];
+                document.getElementById("Family Book.jpg").src=images[i];
+                i++;
+                if(i==4){
+                    i=0;
+                }}
+        </script>
+    </body>
+</html>
